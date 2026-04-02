@@ -20,13 +20,22 @@
     }
 
     img {
-      width: 480px;
-      position: absolute;
-      bottom: 400px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
+  width: 480px;
+  position: absolute;
+  top: 55%;
+  left: -300px;
+
+  animation: drive 6s linear infinite;
+}
   </style>
+  @keyframes drive {
+  from {
+    left: -300px;
+  }
+  to {
+    left: 110%;
+  }
+}
 </head>
 
 <body>
