@@ -10,6 +10,7 @@
       font-family: 'Cinzel', serif;
       position: relative;
       height: 100vh;
+      overflow: hidden;
     }
 
     h1 {
@@ -20,22 +21,23 @@
     }
 
     img {
-  width: 280px;
-  position: absolute;
-  bottom: 120px;
-  left: -300px;
+      width: 280px;
+      position: absolute;
+      bottom: 120px;
+      left: -300px;
 
-  animation: drive 6s linear infinite;
-}
+      animation: drive 6s linear infinite;
+    }
+
+    @keyframes drive {
+      from {
+        left: -300px;
+      }
+      to {
+        left: 110%;
+      }
+    }
   </style>
-  @keyframes drive {
-  from {
-    left: -300px;
-  }
-  to {
-    left: 110%;
-  }
-}
 </head>
 
 <body>
