@@ -27,3 +27,21 @@
   <h1>Royal E-Car Tours</h1>
 </body>
 </html>
+<img src="car.png" class="car">
+.car {
+  position: absolute;
+  bottom: 50px;
+  left: -200px;
+  width: 200px;
+
+  animation: drive 6s linear infinite;
+}
+
+@keyframes drive {
+  from {
+    left: -200px;
+  }
+  to {
+    left: 110%;
+  }
+}
